@@ -2,7 +2,7 @@ module RubyShutterfly
 
   module Endpoint
 
-    LGIN_ROOT = 'http://www.shutterfly.com'
+    LOGIN_ROOT = 'http://www.shutterfly.com'
     LOGIN = '/oflyuser/grantApp.sfly'
 
     ALBUM_ROOT = 'http://ws.shutterfly.com'
