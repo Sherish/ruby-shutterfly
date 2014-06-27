@@ -7,7 +7,8 @@ module RubyShutterfly
   end
 
   def self.timestamp
-    Time.now.strftime('%Y-%m-%dT%H:%M:%S.%L%Z')
+    #Time.now.strftime('%Y-%m-%dT%H:%M:%S.%L%Z')
+    Time.now.utc.strftime('%Y-%m-%dT%H:%M:%S.%L%:z')
   end
 
   def self.generate_signature(endpoint, params, timestamp)
